@@ -1,0 +1,150 @@
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a,
+label {
+    margin: 0px;
+    padding: 0px;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #1C1736;
+}
+
+button {
+    border: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cadastro {
+    background: #E2E2E2;
+    border-radius: 16px;
+    border: none;
+    font-style: normal;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #1E254C;
+    margin-right: 10px;
+}
+
+.hvr-grow-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.hvr-grow-shadow:hover,
+.hvr-grow-shadow:focus,
+.hvr-grow-shadow:active {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.login {
+    background: rgba(0, 192, 192, 0.65);
+    border-radius: 16px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    padding: 10px 30px 10px 30px;
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 1260px;
+    line-height: 1;
+    margin: 0 auto;
+    padding: 180px 10px 50px;
+}
+
+.conteudo-sobre h1 {
+    margin-bottom: 50px;
+}
+
+.conteudo-sobre p {
+    font-size: 24px;
+    line-height: 28px;
+    color: #E2E2E2;
+    margin-bottom: 50px;
+}
+
+.scale-in-center {
+    animation: scale-in-center .8s cubic-bezier(.25, .46, .45, .94) both
+}
+
+@keyframes scale-in-center {
+    0% {
+        transform: scale(0);
+        opacity: 1
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+.conteudo-sobre button {
+    width: 142px;
+    height: 50px
+}
+
+.teste {
+    margin-left: 160px;
+    ;
+}
+
+footer {
+    margin-top: 160px;
+}
+
+footer p {
+    color: #E2E2E2;
+    font-size: 12px;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #E2E2E2;
+}
