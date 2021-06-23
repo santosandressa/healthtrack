@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet" />
@@ -47,10 +47,10 @@
     </nav>
 
     <section class="container">
-        <div class="row">
+        <div class="row primeiro-conteudo">
             <div class="col-sm conteudo-sobre">
-                <h1>
-                    <svg width="348 " height="49 " viewBox="0 0 348 49 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+
+                <svg width="348 " height="49 " viewBox="0 0 348 49 " fill="none " xmlns="http://www.w3.org/2000/svg ">
               <path
                 d="M37.0938 48H27.7188V28.5H9.4375V48H0.0625V2.5H9.4375V20.9375H27.7188V2.5H37.0938V48ZM60.2812 48.625C55.3229 48.625 51.2812 47.1042 48.1562 44.0625C45.0521 41.0208 43.5 36.9688 43.5 31.9062V31.0312C43.5 27.6354 44.1562 24.6042
             45.4688 21.9375C46.7812 19.25 48.6354 17.1875 51.0312 15.75C53.4479 14.2917 56.1979 13.5625 59.2812 13.5625C63.9062 13.5625 67.5417 15.0208 70.1875 17.9375C72.8542 20.8542 74.1875 24.9896 74.1875 30.3438V34.0312H52.6562C52.9479 36.2396 53.8229
@@ -79,10 +79,12 @@
                 fill="#F2F2F2 "
               />
             </svg>
-                </h1>
 
                 <p>Lorem ipsum dolor sit amet, labore et dolore magna aliqua.</p>
-                <button class="cadastro hvr-grow-shadow">Cadastre-se</button>
+                <div class="btn-cadastro">
+                    <button type="button" class="cadastro hvr-grow-shadow" data-toggle="modal" data-target="#exampleModalPreview">Cadastre-se</button>
+                </div>
+
             </div>
 
             <div class="col-sm">
@@ -92,15 +94,108 @@
     </section>
 
     <footer class="footer">
-        <div class="conteudo-footer">
+        <div class="container conteudo-footer">
             <img src="./assets/HealthTrack.png" alt="HealthTrack" />
             <p>© Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+    <div class="modal fade right" id="exampleModalPreview" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true">
+        <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
+            <div class="modal-content-full-width modal-content">
+                <div class="modal-header-full-width container modal-header">
+                    <div class="titulo">
+                        <h2>Cadastro</h2>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span style="font-size: 1.3em" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body container">
+                    <div class="row d-flex align-items-center mt-3">
+                        <div class="col-lg-7">
+                            <form action="" role="form">
+                                <input id='step2' type='checkbox'>
+
+                                <div id="part1" class="form-group">
+                                    <div class="panel panel-primary">
+                                        <label for="formGroupExampleInput">Nome</label>
+                                        <input type="text" id="name" class="form-control" placeholder="Nome completo" aria-describedby="sizing-addon1" required>
+
+                                        <label for="formGroupExampleInput">Usuario</label>
+                                        <input type="text" class="form-control" name="usuario" id="usuario" placeholder="Digite seu nome completo" required>
+
+                                        <label for="inputEmail" class="control-label">E-mail</label>
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu e-mail" required>
+
+                                        <div class="d-flex">
+                                            <div class="col-6">
+                                                <label for="inputPassword" class="control-label">Senha</label>
+                                                <input type="password" class="form-control" name="senha" id="senha" placeholder="Digite a senha" required>
+
+                                            </div>
+                                            <div class="col-6">
+                                                <label for="inputConfirm">Confirmar a senha</label>
+                                                <input type="password" class="form-control" name="confirmSenha" id="confirmSenha" placeholder="Digite a senha novamente" required>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="btn-group btn-group-lg" role="group" aria-label="...">
+                                        <label for='step2' id="continue-step2" class="proximo">
+                                    <div class="hvr-grow-shadow btn btn-lg">Próximo <i class="far fa-arrow-alt-circle-right"></i></div>
+                                  </label>
+                                    </div>
+                                </div>
+
+                                <div id="part2" class="form-group">
+                                    <div class="panel panel-primary">
+                                        <div class="meta">
+                                            <h2>Meta</h2>
+                                            <ul class="ks-cboxtags">
+                                                <li><input type="checkbox" id="checkboxOne"><label for="checkboxOne">Perder Peso</label></li>
+                                                <li><input type="checkbox" id="checkboxTwo"><label for="checkboxTwo">Manter Peso</label></li>
+                                                <li><input type="checkbox" id="checkboxThree"><label for="checkboxThree">Ganhar Peso</label></li>
+                                            </ul>
+                                        </div>
+
+                                        <div>
+                                            <h2>Frequência Atividade Física</h2>
+                                            <ul class="ks-cboxtags">
+                                                <li><input type="checkbox" id="checkboxFour"><label for="checkboxFour">Sedentário ou Raramente</label></li>
+                                                <li><input type="checkbox" id="checkboxFive"><label for="checkboxFive">2 a 3 vezes na semana</label></li>
+                                                <li><input type="checkbox" id="checkboxSix"><label for="checkboxSix">4 ou mais vezes na semana</label></li>
+                                            </ul>
+                                        </div>
+
+
+                                        <div class="btn-group btn-group-lg" role="group" aria-label="...">
+                                            <label for='step2' class="back">
+                                        <div class=" hvr-grow-shadow btn btn-default  btn-lg">Voltar <i class="far fa-arrow-alt-circle-left"></i></div>
+                                      </label>
+                                            <label class="continue">
+                                        <button type="submit" class="btn btn-default btn-lg cadastrar hvr-grow-shadow ">Cadastrar</button>
+                                      </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-4">
+                            <img src="./assets/fitness-tracker-animate.svg" alt="Homem se exercitando" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="https://kit.fontawesome.com/5af32ecefc.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
 </body>
 
 </html>
