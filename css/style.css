@@ -37,7 +37,7 @@ a {
     justify-content: space-between;
     max-width: 1260px;
     margin: 0 auto;
-    padding: 15px 0;
+    padding: 30px 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -82,14 +82,14 @@ a {
     transform: scale(1.1);
 }
 
-.login {
+.login-logout {
     background: rgba(0, 192, 192, 0.65);
     border-radius: 16px;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
     padding: 10px 30px 10px 30px;
-    color: #ffffff;
+    color: #E2E2E2;
 }
 
 .container {

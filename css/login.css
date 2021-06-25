@@ -1,151 +1,176 @@
-    body,
-    h1,
-    h2,
-    p,
-    ul,
-    li,
-    a,
-    label {
-        margin: 0px;
-        padding: 0px;
-        vertical-align: baseline;
-    }
-    
-    body {
-        font-family: "Roboto", sans-serif;
-        background: #1c1736;
-    }
-    
-    button {
-        border: none;
-    }
-    
-    ul {
-        list-style: none;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
-    * {
-        box-sizing: border-box;
-    }
-    
-    .form-control {
-        background-color: #E2E2E2;
-        border-radius: 50px;
-        padding: 12px 15px 12px 15px;
-        width: 100%;
-        box-sizing: border-box;
-        border: none;
-        border: 1px solid rgba(0, 192, 192, 0.65);
-        font-size: 16px;
-        font-weight: 400
-    }
-    
-    .form-control::placeholder {
-        font-size: 10px;
-        color: #626164;
-    }
-    
-    input:focus,
-    textarea:focus {
-        -moz-box-shadow: none;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        border: 1px solid #0a0042;
-        outline-width: 0;
-        font-weight: 400
-    }
-    
-    button:focus {
-        -moz-box-shadow: none;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        outline-width: 0
-    }
-    
-    .card {
-        border-radius: 0;
-        border: none
-    }
-    
-    .card1 {
-        width: 50%;
-        padding: 40px 30px 10px 30px;
-        background-color: #1c1736;
-    }
-    
-    .card2 {
-        padding: 70px 30px 10px 30px;
-        width: 50%;
-        background-color: #1c1736;
-    }
-    
-    .form-control-label {
-        font-size: 14px;
-        margin-left: 15px;
-        padding-bottom: 5px;
-        color: #E2E2E2;
-        font-weight: bold;
-    }
-    
-    h4 {
-        padding-left: 15px;
-        margin-bottom: 30px;
-        color: #E2E2E2;
-    }
-    
-    .btn-color {
-        border-radius: 50px;
-        color: #fff;
-        background: rgba(0, 192, 192, 0.65);
-        padding: 15px;
-        cursor: pointer;
-        border: none !important;
-        margin-top: 40px
-    }
-    
-    .btn-white {
-        border-radius: 50px;
-        font-size: 12px;
-        color: #0a0042;
-        font-weight: bold;
-        background-color: #E2E2E2;
-        padding: 8px 40px;
-        cursor: pointer;
-        border: 2px solid rgba(0, 192, 192, 0.65);
-    }
-    
-    .sm-text {
-        color: #E2E2E2;
-        font-size: 12px;
-    }
-    
-    @media screen and (max-width: 992px) {
-        .card1 {
+        body,
+        h1,
+        h2,
+        p,
+        ul,
+        li,
+        a,
+        label {
+            margin: 0px;
+            padding: 0px;
+            vertical-align: baseline;
+        }
+        
+        body {
+            font-family: "Roboto", sans-serif;
+            background: #1c1736;
+        }
+        
+        button {
+            border: none;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .form-control {
+            background-color: #E2E2E2;
+            border-radius: 50px;
+            padding: 12px 15px 12px 15px;
             width: 100%;
-            padding: 40px 30px 10px 30px
+            box-sizing: border-box;
+            border: none;
+            border: 1px solid rgba(0, 192, 192, 0.65);
+            font-size: 16px;
+            font-weight: 400
         }
+        
+        .form-control::placeholder {
+            font-size: 10px;
+            color: #626164;
+        }
+        
+        input:focus,
+        textarea:focus {
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            border: 1px solid #0a0042;
+            outline-width: 0;
+            font-weight: 400
+        }
+        
+        button:focus {
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            outline-width: 0
+        }
+        
+        .hvr-grow-shadow {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: box-shadow, transform;
+            transition-property: box-shadow, transform;
+        }
+        
+        .hvr-grow-shadow:hover,
+        .hvr-grow-shadow:focus,
+        .hvr-grow-shadow:active {
+            box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        
+        .card {
+            border-radius: 0;
+            border: none
+        }
+        
+        .card1 {
+            width: 50%;
+            padding: 40px 30px 10px 30px;
+            background-color: #1c1736;
+        }
+        
         .card2 {
-            width: 100%
+            padding: 70px 30px 10px 30px;
+            width: 50%;
+            background-color: #1c1736;
         }
-        .right {
-            margin-top: 100px !important;
-            margin-bottom: 100px !important
+        
+        .form-control-label {
+            font-size: 14px;
+            margin-left: 15px;
+            padding-bottom: 5px;
+            color: #E2E2E2;
+            font-weight: bold;
         }
-    }
-    
-    @media screen and (max-width: 768px) {
-        .container {
-            padding: 10px !important
+        
+        h4 {
+            padding-left: 15px;
+            margin-bottom: 30px;
+            color: #E2E2E2;
         }
-        .card2 {
-            padding: 50px
+        
+        .btn-login {
+            width: 100%;
         }
-        .right {
-            margin-top: 50px !important;
-            margin-bottom: 50px !important
+        
+        .btn-color {
+            width: 100%;
+            border-radius: 50px;
+            color: #fff;
+            background: rgba(0, 192, 192, 0.65);
+            padding: 15px;
+            cursor: pointer;
+            border: none;
+            margin-top: 40px
         }
-    }
+        
+        .btn-white {
+            border-radius: 50px;
+            font-size: 12px;
+            color: #0a0042;
+            font-weight: bold;
+            background-color: #E2E2E2;
+            padding: 8px 40px;
+            cursor: pointer;
+            border: 2px solid rgba(0, 192, 192, 0.65);
+        }
+        
+        .sm-text {
+            color: #E2E2E2;
+            font-size: 12px;
+        }
+        
+        @media screen and (max-width: 992px) {
+            .card1 {
+                width: 100%;
+                padding: 40px 30px 10px 30px
+            }
+            .card2 {
+                width: 100%
+            }
+            .right {
+                margin-top: 100px !important;
+                margin-bottom: 100px !important
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 10px !important
+            }
+            .card2 {
+                padding: 50px
+            }
+            .right {
+                margin-top: 50px !important;
+                margin-bottom: 50px !important
+            }
+        }
