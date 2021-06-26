@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/login.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon.ico">
     <title>Healthtrack - Login</title>
 </head>
 
@@ -30,11 +31,110 @@
                         </div>
                     </div>
                     <div class="bottom text-center mb-5 ">
-                        <p href="# " class="sm-text mx-auto mb-3 ">Não tem uma conta?<button class="btn btn-white ml-2  hvr-grow-shadow">Cadastrar</button></p>
+                        <p href="# " class="sm-text mx-auto mb-3 ">Não tem uma conta?<button class="btn btn-white ml-2  hvr-grow-shadow" data-toggle="modal" data-target="#exampleModalPreview">Cadastrar</button></p>
                     </div>
                 </div>
                 <div class="card card2">
                     <img src="./assets/esteira.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade right " id="exampleModalPreview" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true">
+        <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
+            <div class="modal-content-full-width modal-content">
+                <div class="modal-header-full-width container modal-header">
+                    <div class="titulo">
+                        <h2>Cadastro</h2>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span style="font-size: 1.3em" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body container">
+                    <div class="row d-flex align-items-center mt-3">
+                        <div class="col-lg-7">
+                            <form action="" role="form">
+                                <input id='step2' type='checkbox'>
+
+                                <div id="part1" class="form-group">
+                                    <div class="panel panel-primary">
+                                        <label for="formGroupExampleInput">Nome</label>
+                                        <input type="text" id="name" class="form-control" placeholder="Nome completo" aria-describedby="sizing-addon1">
+
+                                        <label for="formGroupExampleInput">Usuario</label>
+                                        <input type="text" class="form-control" name="usuario" id="usuario" placeholder="Digite seu nome completo">
+
+                                        <label for="inputEmail" class="control-label">E-mail</label>
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu e-mail">
+
+                                        <div class="d-flex">
+                                            <div class="col-6">
+                                                <label for="inputPassword" class="control-label">Senha</label>
+                                                <input type="password" class="form-control" name="senha" id="senha" placeholder="Digite a senha">
+
+                                            </div>
+                                            <div class="col-6">
+                                                <label for="inputConfirm">Confirmar a senha</label>
+                                                <input type="password" class="form-control" name="confirmSenha" id="confirmSenha" placeholder="Digite a senha novamente">
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="btn-group btn-group-lg" role="group" aria-label="...">
+                                        <label for='step2' id="continue-step2" class="proximo">
+                                            <div class="hvr-grow-shadow btn btn-lg">Próximo <i
+                                                    class="far fa-arrow-alt-circle-right"></i></div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div id="part2" class="form-group">
+                                    <div class="panel panel-primary">
+                                        <div class="meta">
+                                            <h2>Meta</h2>
+                                            <ul class="ks-cboxtags">
+                                                <li><input type="checkbox" id="checkboxOne"><label for="checkboxOne">Perder Peso</label></li>
+                                                <li><input type="checkbox" id="checkboxTwo"><label for="checkboxTwo">Manter Peso</label></li>
+                                                <li><input type="checkbox" id="checkboxThree"><label for="checkboxThree">Ganhar Peso</label></li>
+                                            </ul>
+                                        </div>
+
+                                        <div>
+                                            <h2>Frequência Atividade Física</h2>
+                                            <ul class="ks-cboxtags">
+                                                <li><input type="checkbox" id="checkboxFour"><label for="checkboxFour">Sedentário ou Raramente</label></li>
+                                                <li><input type="checkbox" id="checkboxFive"><label for="checkboxFive">2
+                                                        a 3 vezes na semana</label></li>
+                                                <li><input type="checkbox" id="checkboxSix"><label for="checkboxSix">4
+                                                        ou mais vezes na semana</label></li>
+                                            </ul>
+                                        </div>
+
+
+                                        <div class="btn-group btn-group-lg" role="group">
+                                            <label for='step2' class="back">
+                                                <div class=" hvr-grow-shadow btn btn-default btn-lg">Voltar <i
+                                                        class="far fa-arrow-alt-circle-left"></i></div>
+                                            </label>
+                                            <label>
+                                                <a href="login.html"><button type="submit"
+                                                        class="btn btn-default btn-lg cadastrar hvr-grow-shadow "
+                                                        >Cadastrar</button></a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-4">
+                            <img src="./assets/fitness-tracker-animate.svg" alt="Homem se exercitando" />
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
